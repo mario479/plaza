@@ -1,0 +1,65 @@
+.blog {
+    width: 100%;
+}
+
+.blog-primicia {
+    width: 100%;
+    background:  rgb(146, 50, 50);
+    color: #fff;
+    text-align: center;
+   margin-bottom: 25px;
+   border-radius: 10px;
+   width: 98%;
+   margin: auto;
+}
+
+.blog-primicia img {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.blog-primicia .texto {
+    padding: 10px;
+}
+
+.blog--post {
+    width: 95%;
+    margin: auto;
+}
+
+.post {
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+.post img, .texto {
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.post--bottom {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post--bottom button {
+    padding: 7px;
+    background: rgb(5, 128, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.post--bottom button:hover {
+    color: rgb(5, 128, 1);
+    background: #fff;
+}
+
+@media screen and (min-width:480px) {
+    .post--bottom button {
+       width: 150px;
+    }
+  }

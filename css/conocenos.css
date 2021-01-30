@@ -1,0 +1,138 @@
+/*---------------------------------conocenos--presentacion--------------------------------------------*/
+
+.conocenos--presentacion {
+    width: 100%;
+}
+
+.conocenos--presentacion img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding: 8px;
+  object-fit: cover;
+}
+
+.conocenos--presentacion .texto {
+    border-top: 1px solid rgb(146, 50, 50);
+    padding: 8px;
+  }
+  
+/*-------------------------------------conocenos--historia------------------------------------*/
+
+.conocenos--historia {
+    background: rgba(0, 0, 0, .23);
+    margin-bottom: 20px;
+}
+
+.conocenos--historia img {
+   height: 300px;
+   object-fit: cover;
+   padding: 10px;
+}
+
+
+.conocenos--historia .texto {
+ padding: 10px;
+}
+
+
+/*--------------------------galeria-----------------------------*/
+
+.gallery__img {
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.02);
+}
+
+.gallery__img--big {
+    height: 400px;    
+}
+
+.gallery__img--small {
+    height: 200px;
+}
+
+.modal {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: none;
+}
+
+.modal__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal__img {
+    width: 70%;   /*esta es la opcion para que se pueda agrandar la imagen cuando se le presione*/
+}
+
+.modal__boton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: red;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 50px;
+    font-family: monospace;
+}
+
+.modal--open {
+    display: block;
+}
+
+
+@media screen and (min-width:480px) {
+  .column--33 {
+      width: 33%;
+  }
+
+  .conocenos--presentacion img {
+   width: 130px;
+   height: 130px;
+  }
+
+  .column--50-25 {
+    width: 49%;
+    }
+}
+
+@media screen and (min-width:768px) {
+  
+    .conocenos--presentacion img {
+     width: 200px;
+     height: 200px;
+    }
+  
+    .column--50-25 {
+      width: 24.5%;
+      }
+  }
+
+  @media screen and (min-width:1024px) {
+  
+    .conocenos--presentacion img {
+     width: 230px;
+     height: 230px;
+    }
+  }

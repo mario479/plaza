@@ -1,0 +1,151 @@
+#slides {
+  position: relative;
+}
+
+
+#slides .slides-container {
+  display: none;
+}
+
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.slides-navigation a:hover {
+    background: #000;
+} 
+
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  width: 20px;
+  height: 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+
+.slides-pagination a.current {
+  background: #222;
+}
+
+.description {
+    margin-top: 15px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.description-titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.description-txt {
+        font-size: 1em;
+    text-align: center;
+
+}
+
+.slider-bottom {
+    text-align: center;
+}
+
+.slider-bottom a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.slider-bottom a:hover {
+    background: rgba(51,51,51,0.5);
+}
+
+
+@media screen and (min-width:480px) {
+ 
+    .slider-bottom a {
+        margin-top: 25px;
+        
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+  
+    .slider-bottom a {
+       width: 150px; 
+     
+    }
+    
+    
+}
+
+
+

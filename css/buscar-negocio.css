@@ -1,0 +1,79 @@
+.buscar--negocio form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.barra-busqueda {
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: 1 px solid #9b9b9b;
+    text-align: center;
+    font-size: 16px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categorias a {
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.categorias .activo {
+    color: #000;
+}
+
+.categorias--item {
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #9b9b9b;
+    background: rgb(146, 50, 35);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.categorias--item img, .texto {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.categorias--item img {
+    width: 330px;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+
+}
+
+.categorias--item-button {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.categorias--item-button button {
+    padding: 8px;
+    color: #fff;
+    background:  rgb(5, 128, 1);
+    border: none;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.categorias--item-button button:hover {
+    color:  rgb(5, 128, 1);
+    background: #fff;
+}

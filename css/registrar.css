@@ -1,0 +1,48 @@
+.registrar {
+   background: rgba(0,0,0,.123);
+   width: 100%;
+}
+
+.registrar--info {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.registrar--info ul {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.registrar--info-experiencia {
+  padding: 10px;
+}
+
+.registrar--info-experiencia img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/*---------------------estilos-responsive------------------------*/
+
+@media screen and (min-width:480px)  {
+   
+   }
+   
+    @media screen and (min-width:768px)  {
+   .registrar--info-experiencia img {
+     height: 200px;
+     width: 200px;
+   }
+      }
+   
+   @media screen and (min-width:1024px) /*viene el menú*/{
+     
+       
+   }
+   
+   @media screen and (min-width:1600px) {
+   
+   }
